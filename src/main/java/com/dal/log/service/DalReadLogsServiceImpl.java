@@ -22,7 +22,7 @@ public class DalReadLogsServiceImpl implements DalReadLogsService {
 	@Override
 	public DalLogDto getLogs(Long noOfLogLinesToRead) throws IOException {
 
-		try (BufferedReader reader = Files.newBufferedReader(Paths.get("/home/masayyed/trino-server-412/data/var/log/server.log"))) {
+		try (BufferedReader reader = Files.newBufferedReader(Paths.get("logs/dal-test.log"))) {
 			DalLogDto logs = new DalLogDto();
 			logs.setLogs(readAndGetLogLines(noOfLogLinesToRead, reader));
 			

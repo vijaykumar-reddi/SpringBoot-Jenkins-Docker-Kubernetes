@@ -8,6 +8,7 @@ class DalLogApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.println("Test executing");
 	}
 
 }
